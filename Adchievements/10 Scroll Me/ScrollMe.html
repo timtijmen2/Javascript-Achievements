@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Mij</title>
+</head>
+<body>
+    <p onwheel="this.innerHTML = 'Ook Hallo'">Goede dag</p>
+    <p onwheel="zeghallo(this)">Scolll voor meer Hallo's☞ Hallo!</p>
+    
+    <script>
+        function zeghallo(id){
+            id.innerHTML += " Hallo!"
+        }
+
+    </script>
+    <style>
+        p{
+            font-size: 30px;
+        }
+    </style>
+
+
+</body>
+</html>

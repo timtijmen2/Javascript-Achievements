@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head><link rel="stylesheet" href="style.css"></link></head>
+    <body>
+        <table id="table">
+        
+        <script>
+            let table = document.getElementById("table");
+            for(let i = 0; i < 4;i++){
+                table.innerHTML += "<tr>";
+                table.innerHTML += "<td class='white'></td><td class='black'></td><td class='white'></td><td class='black'></td><td class='white'></td><td class='black'></td><td class='white'></td><td class='black'></td>";
+             
+                table.innerHTML += "</tr>";
+                table.innerHTML += "<tr>";
+                table.innerHTML += "<td class='black'></td><td class='white'></td><td class='black'></td><td class='white'></td><td class='black'></td><td class='white'></td><td class='black'></td><td class='white'></td>";
+             
+                table.innerHTML += "</tr>";
+            }
+        </script>
+        
+    </table>
+    </body>
+    
+</html>

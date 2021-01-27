@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="gameOver"></p>
+    <progress id="healthbar" max="100" value="100"></progress>
+    <input id="button" type="button" value="Click"></input>
+    <script>
+        let button = document.getElementById("button");
+        let health = document.getElementById("healthbar");
+        button.addEventListener("wheel",()=>{
+            health.value -= 1;
+            if(health.value <= 0){
+                document.getElementById("gameOver").innerHTML = "GAME OVER";
+            }
+            
+        })
+
+    </script>
+</body>
+</html>

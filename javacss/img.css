@@ -2,6 +2,7 @@ img {
   max-width: 100%;
   height: auto;
 }
-.p1 {
-    font-family: Arial, Helvetica, sans-serif;
+.lower {
+    font-family: Arial;
+    background-color: blue;
   }

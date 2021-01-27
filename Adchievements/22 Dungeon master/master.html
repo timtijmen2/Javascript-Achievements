@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+
+
+    <p id="uitkomst"></p>
+    <input type="button" id="button" value="Gooi Maar">
+    
+    <script>
+        document.getElementById("button").addEventListener("click", ()=>{
+            let stenen = [];
+            let dobbel = 0;
+            for(i = 0; i < 6; i++){
+                dobbel = Math.floor(Math.random() * 6) +1
+                stenen.push(dobbel);
+                console.log(stenen)
+            }
+            stenen.sort();
+            stenen.shift();
+            console.log(stenen)
+            let uitkomst = 0
+            for(j = 0; j < stenen.length; j++){
+                uitkomst += stenen[j]
+                console.log(uitkomst)
+            }
+            document.getElementById("uitkomst").innerHTML = uitkomst
+        })
+
+    </script>
+
+</body>
+</html>

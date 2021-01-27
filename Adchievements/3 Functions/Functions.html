@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="getal1" type="text">
+    <input id="getal2" type="text">
+    <input id="button" type="button" value="Reken maar uit">
+    <p id="aftrekken"></p>
+    <p id="delen"></p>
+    <p id="plus"></p>
+    <p id="keer"></p>
+    <script>
+        function aftrekken(getal1, getal2){
+            return getal1 - getal2
+        }
+        function delen(getal1,getal2){
+            return getal1 / getal2
+        }
+        function plus(getal1, getal2){
+            return getal1 + getal2
+        }
+        function keer(getal1,getal2){
+            return getal1 * getal2
+        }
+
+
+        
+        let button = document.getElementById("button")
+        
+        button.addEventListener("click", ()=>{
+            let getal1 = document.getElementById("getal1").value
+            let getal2 = document.getElementById("getal2").value
+            document.getElementById("delen").innerHTML = delen(getal1, getal2)
+            document.getElementById("aftrekken").innerHTML = aftrekken(getal1,getal2)
+            document.getElementById("plus").innerHTML = plus(getal1,getal2)
+            document.getElementById("keer").innerHTML = keer(getal1, getal2)
+        })
+    </script>
+</body>
+</html>

@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="eng">
 <head>
+    <button id="knop" onclick="helloWorld()">Hoe Laat is het?</button>
+    <button id="reload">Herladen</button>
+    <input type="text" class="Hier">
+    <input type="text" class="Hier">
     <script>
         var date = new Date()
         var time = date.toLocaleTimeString()
@@ -11,5 +15,30 @@
         window.onload = helloWorld
         
     </script>
+    <style>
+        .Hier{
+            background-color: greenyellow;
+            
+            font-family: cursive;
+            font-size: 90px;
+            color:red;
+            border: none;
+            display: grid;
+            
+            
+        }
+        #reload {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 40px;
+        }
+        #knop    {
+            background-color: seagreen;
+            color: red;
+            font-family:fantasy;
+            font-size:80px;
+            
+        }
+
+    </style>
 </head>
 </html>
